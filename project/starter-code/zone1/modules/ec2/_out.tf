@@ -1,7 +1,7 @@
-output "aws_instance" {
-   value = aws_instance.ubuntu
- }
+output "cluster_id" {
+  value = aws_eks_cluster.cluster.id
+}
 
- output "ec2_sg" {
-     value = aws_security_group.ec2_sg.id
- }
+# output "eks_node_instance_policy" {
+#   value = aws_iam_policy.eks_node_instance_policy.arn
+# }
